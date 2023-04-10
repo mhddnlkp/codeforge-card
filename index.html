@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="styles.css" rel="stylesheet">
+    <title>Fundamental CSS comprehension</title>
+  </head>
+  <body>
+
+  <section class="card">
+    <header>
+      <h2>Chris Mills</h2>
+    </header>
+    <article>
+      <img src="download (1).jpeg" alt="pic">
+      <p>50 My Street<br>
+         The Town<br>
+         Gray Peach<br>
+         UK<br>
+         ZO50 1MU<br><br>
+        <strong>Tel</strong>: 01234 567 890<br>
+        <strong>Mail</strong>: chris@nothere.com</p>
+    </article>
+    <footer>
+      <p>Editing, writing, and web development services</p>
+    </footer>
+  </section>
+
+  </body>
+  <style>
+
+body {
+    margin: 0;
+  }
+  
+  html {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+
+  }
+
+  .card{
+    width: 25em;
+    height: 15em;
+    margin: 5em auto;
+    background-color: grey;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+  }
+  
+  .card h2, p{
+    margin: 0;
+  }
+  
+  .card h2{
+    font-size: 1.25em;
+    height: 1.2em;
+  }
+  
+  /* styles  for header and footer*/
+  .card header, .card footer{
+    height: 1.875em;
+    padding: 0.625em;  
+  }
+  
+  .card header{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+ 
+  }
+  
+  .card footer{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+
+  }
+  
+  .card footer p{
+    font-size: 0.938;
+    
+  }
+  
+  .card article{  
+    padding-left: 0.625em;
+    padding-top: 0.825em;
+    height: 8em;
+    background-color:lightgrey;
+  }
+  
+  
+  .card article img{
+    max-height: 100%;
+    float: right;
+  }
+  
+  .card article p{
+    color: white;
+    font-size: 12px;  
+  
+  }
+  </style>
+</html>
+
